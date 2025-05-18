@@ -61,6 +61,7 @@ body {
   align-items: center;
   color: #333;
   user-select: none;
+  margin-top: 50px;
 }
 
 .embed-info {
