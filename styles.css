@@ -2,7 +2,7 @@ body {
   background: #303030;
 }
 
-.meow { /* .meow is called upon by the text on the website */
+.maintext { /* .meow is called upon by the text on the website */
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
