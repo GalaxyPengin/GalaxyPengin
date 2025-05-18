@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Joystix';
+  src: url('https://raw.githubusercontent.com/Doctor-Zer0/temp/main/fonts/joystix%20monospace.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -17,4 +25,68 @@ body {
 
 .highlight {
   color: gold;
+}
+
+.currently-listening-to-txt {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #fff;
+  font-family: 'Joystix', monospace, sans-serif;
+}
+
+.alt-embed-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #8d8d8d;
+  text-align: center;
+}
+
+.embed-container {
+  width: 630px;
+  height: 190px;
+  padding: 20px;
+  background: #1f1f1f;
+  border-radius: 60px;
+  border: 8px solid black;
+  /* box-shadow: 0 6px 10px rgba(0,0,0,0.15); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  user-select: none;
+}
+
+.embed-info {
+  width: 600px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cecece;
+  user-select: none;
+}
+
+.song-info {
+  width: 700px;
+  height: 150px;
+  padding: 20px;
+  background: #ffcc00;
+  border-radius: 20px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  user-select: none;
+  text-align: center;
+
+  visibility: hidden;
 }
