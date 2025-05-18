@@ -9,3 +9,7 @@ body {
   color: #c763f9;
   font-family: 'Arial Rounded MT Bold', sans-serif;
 }
+
+.highlight {
+  color: #fce100;
+}
