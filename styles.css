@@ -2,9 +2,10 @@ body {
   background: #303030;
 }
 
-.meow {
+.meow { /* .meow is called upon by the text on the website */
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   color: #c763f9;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
 }
