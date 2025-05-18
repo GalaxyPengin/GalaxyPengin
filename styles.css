@@ -2,7 +2,7 @@ body {
   background: #303030;
 }
 
-.maintext {
+.text-container {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
