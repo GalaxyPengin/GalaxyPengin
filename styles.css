@@ -1,1 +1,10 @@
+body {
+  background: #303030;
+}
 
+.meow {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #c763f9;
+}
