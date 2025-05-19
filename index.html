@@ -76,7 +76,7 @@ fetchVisitorCount()
       }
     } catch (err) {
       songEl.textContent = 'Error retrieving data.';
-      embedContent.textContent = '';
+      embedContent.textContent = 'Error retrieving data.';
       console.error('Fetch error:', err);
     }
   }
