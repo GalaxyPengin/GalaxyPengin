@@ -16,50 +16,25 @@
 </div>
 <div class="embed-container">
   <div class="currently-listening-to-txt">Currently Listening To:</div>
-  <div class="alt-embed-txt" id="altEmbedTxt">Nothing is currently playing.</div>
-  <div class="embed-info" id="embedInfo">Loading Embed...</div>
+  <div class="embed-content" id="embedContent">Loading Embed...</div>
 </div>
 <div class="song-info" id="songInfo">Loading...</div>
-
 <div class="meow">
   Unique home dawgs so far: <span id="visitor-count">…</span>
 </div>
-
-<script>
-// on page‑load, hit the API and fill the span
-fetch('https://gpwebcodeserver.onrender.com/api/visitors')
-  .then(r => r.json())
-  .then(data => {
-    document.getElementById('visitor-count').textContent = data.count
-  })
-  .catch(err => console.error('visitor counter error', err))
-</script>
-  
 <script>
 (() => {
-  // Extract token from URL and save to localStorage
-  const urlParams = new URLSearchParams(window.location.search);
-  const refreshToken = urlParams.get('token');
-  if (refreshToken) {
-    localStorage.setItem('refresh_token', refreshToken);
-    history.replaceState(null, '', window.location.pathname);
-  }
-
-  const altEmbedTxt = document.getElementById('altEmbedTxt');
-  const embedEl = document.getElementById('embedInfo');
+  const embedContent = document.getElementById('embedContent');
   const songEl = document.getElementById('songInfo');
 
   let currentTrackId = null;
 
   async function fetchNowPlaying() {
-    const token = localStorage.getItem('refresh_token');
-    if (!token) return;
-
     try {
-      const response = await fetch('https://spotify-backend-zaoy.onrender.com/now-playing', {
-        method: 'POST',
+      const response = await fetch('https://gpwebcodeserver.onrender.com/now-playing', {
+        method: 'GET',
+        credentials: 'include',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ refresh_token: token })
       });
       if (!response.ok) {
         const errorText = await response.text();
@@ -75,20 +50,19 @@ fetch('https://gpwebcodeserver.onrender.com/api/visitors')
 
         if (data.item.id !== currentTrackId) {
           currentTrackId = data.item.id;
-          altEmbedTxt.style.visibility = 'visible';
-          embedEl.innerHTML = `
-            <iframe src="https://open.spotify.com/embed/track/${currentTrackId}?theme=0" 
+          embedContent.innerHTML = `
+            <iframe src="https://open.spotify.com/embed/track/${currentTrackId}?theme=0"
                     width="600" height="160" frameborder="0"
                     allowtransparency="true" allow="encrypted-media"></iframe>`;
         }
       } else {
-        altEmbedTxt.style.visibility = 'visible';
         currentTrackId = null;
-        embedEl.innerHTML = '';
+        embedContent.textContent = 'Nothing is currently playing.';
         songEl.textContent = '';
       }
     } catch (err) {
       songEl.textContent = 'Error retrieving data.';
+      embedContent.textContent = '';
       console.error('Fetch error:', err);
     }
   }
