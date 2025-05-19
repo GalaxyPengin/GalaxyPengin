@@ -133,7 +133,9 @@ html, body {
 @media (max-width: 500px) {
   .embed-container {
     width: 85%;
-    padding: 15px;
+    padding: 5px;
+    border: 6px solid black;
+    margin: 20px auto 0 auto;
     height: fit-content;
   }
   .embed-content {
