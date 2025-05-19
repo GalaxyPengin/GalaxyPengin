@@ -60,7 +60,7 @@ body {
 .embed-container {
   width: 90%;
   max-width: 630px;
-  height: 190px;
+  height: auto;
   padding: 20px;
   background: #1f1f1f;
   border-radius: 60px;
