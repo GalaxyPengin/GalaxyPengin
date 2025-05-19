@@ -57,12 +57,12 @@ fetchVisitorCount();
         throw new Error(`HTTP ${response.status} - ${errorText}`);
       }
       const data = await response.json();
-
+  
       if (data?.is_playing && data.item?.name && data.item.artists?.length) {
         const track = data.item.name;
         const artists = data.item.artists.map(a => a.name).join(', ');
         songEl.innerHTML = `🎵 ${track} 🎵<br>by ${artists}`;
-
+  
         if (data.item.id !== currentTrackId) {
           currentTrackId = data.item.id;
           embedContent.innerHTML = `
@@ -73,12 +73,17 @@ fetchVisitorCount();
       } else {
         currentTrackId = null;
         songEl.textContent = '';
-        if (embedContent.innerHTML !== vinyl) {
+        // Only update embedContent if it’s not already showing vinyl
+        if (!embedContent.innerHTML.includes('GPVinyl.png')) {
           embedContent.innerHTML = vinyl;
         }
+      }
     } catch (err) {
       songEl.textContent = 'Error retrieving data.';
-      embedContent.textContent = 'Error retrieving data.';
+      // Show vinyl on error as well
+      if (!embedContent.innerHTML.includes('GPVinyl.png')) {
+        embedContent.innerHTML = vinyl;
+      }
       console.error('Fetch error:', err);
     }
   }
