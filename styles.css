@@ -98,3 +98,9 @@ body {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@media (max-width: 500px) {
+  .currently-listening-to-txt {
+    font-size: 18px;
+  }
+}
