@@ -99,8 +99,14 @@ body {
   to { transform: rotate(360deg); }
 }
 
+@media (max-width: 800px) {
+  .currently-listening-to-txt {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 500px) {
   .currently-listening-to-txt {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
