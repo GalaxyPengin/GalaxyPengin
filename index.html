@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<img src="images/important/randompenguin" class="toppenguin" />
+<img src="images/important/randompenguin.png" class="toppenguin" />
 
 <div class="text-container">
   <div>Welcome to galaxypengin.com!</div>
@@ -66,7 +66,7 @@ async function fetchVisitorCount() {
         }
       } else {
         currentTrackId = null;
-        embedContent.innerHTML = `<img src="images/important/GPVinyl.png">`;
+        embedContent.innerHTML = `<img src='images/important/GPVinyl.png' alt='Vinyl image' width='300'>`;
         songEl.textContent = '';
       }
     } catch (err) {
@@ -77,7 +77,7 @@ async function fetchVisitorCount() {
   }
 
   fetchNowPlaying();
-  setInterval(fetchNowPlaying, 10000);
+  setInterval(fetchNowPlaying, 1000);
 })();
 </script>
 
