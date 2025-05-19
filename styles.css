@@ -73,8 +73,8 @@ html, body {
 .embed-container {
   width: 90%;
   max-width: 620px;
-  height: 240px;
-  padding: 5px;
+  height: fit-content;
+  padding: 10px;
   background: #1f1f1f;
   border-radius: 60px;
   border: 6px solid black;
@@ -134,7 +134,7 @@ html, body {
   .embed-container {
     width: 85%;
     padding: 15px;
-    height: 165px;
+    height: fit-content;
   }
   .embed-content {
     height: 120px;
