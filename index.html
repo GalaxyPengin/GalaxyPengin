@@ -37,6 +37,7 @@ async function fetchVisitorCount() {
     console.error(err);
   }
 }
+fetchVisitorCount()
 (() => {
   const embedContent = document.getElementById('embedContent');
   const songEl = document.getElementById('songInfo');
@@ -66,7 +67,11 @@ async function fetchVisitorCount() {
         }
       } else {
         currentTrackId = null;
-        embedContent.innerHTML = `<img src='images/important/GPVinyl.png' alt='Vinyl image' width='150' animation='rotate 4s linear infinite' display='inline-block'>`;
+        embedContent.innerHTML = `
+          <img src="images/important/GPVinyl.png" 
+               alt="Vinyl image" 
+               width="150" 
+               style="animation: rotate 4s linear infinite; display: inline-block;">`;
         songEl.textContent = '';
       }
     } catch (err) {
