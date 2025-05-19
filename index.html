@@ -21,6 +21,20 @@
 </div>
 <div class="song-info" id="songInfo">Loading...</div>
 
+<div class="meow">
+  Unique home dawgs so far: <span id="visitor-count">…</span>
+</div>
+
+<script>
+// on page‑load, hit the API and fill the span
+fetch('https://gpwebcodeserver.onrender.com/api/visitors')
+  .then(r => r.json())
+  .then(data => {
+    document.getElementById('visitor-count').textContent = data.count
+  })
+  .catch(err => console.error('visitor counter error', err))
+</script>
+  
 <script>
 (() => {
   // Extract token from URL and save to localStorage
