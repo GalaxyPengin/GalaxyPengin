@@ -18,8 +18,6 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .banner-size {
@@ -124,6 +122,13 @@ html, body {
 @media (max-width: 500px) {
   .currently-listening-to-txt {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .embed-container {
+    width: 85%;
+    padding: 15px;
   }
 }
 
