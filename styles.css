@@ -91,7 +91,7 @@ body {
   height: auto;
   display: block;
   margin: 1rem auto;
-  animation: rotate 2s linear infinite;
+  animation: rotate 0.2s linear infinite;
   display: inline-block;
 }
 
