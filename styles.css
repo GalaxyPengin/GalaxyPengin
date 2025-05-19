@@ -16,6 +16,10 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.welcome-text {
+  color: #c269ff;
+}
+
 .text-container {
   color: #fff;
   font-size: 2rem;
