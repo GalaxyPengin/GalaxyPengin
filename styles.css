@@ -85,7 +85,6 @@ html, body {
   align-items: center;
   color: #333;
   user-select: none;
-  margin-top: 50px;
   margin: 50px auto 0 auto;
 }
 
@@ -130,6 +129,9 @@ html, body {
     width: 85%;
     padding: 15px;
     height: 180px;
+  }
+  .embed-content {
+    height: 120px;
   }
 }
 
