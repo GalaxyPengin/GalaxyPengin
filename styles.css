@@ -85,7 +85,7 @@ body {
 }
 
 .toppenguin {
-  width: calc(100% - 2rem); /* Leaves some space on small screens */
+  width: calc(100% - 4rem); /* Leaves some space on small screens */
   max-width: 50rem;
   height: auto;
   display: block;
