@@ -19,7 +19,6 @@
   <div class="currently-listening-to-txt">Currently Listening To:</div>
   <div class="embed-content" id="embedContent">Loading Embed...</div>
 </div>
-<div class="song-info" id="songInfo">Loading...</div>
 <div class="meow">
   Unique home dawgs so far: <span id="visitor-count">…</span>
 </div>
@@ -41,7 +40,6 @@ fetchVisitorCount();
 setInterval(fetchVisitorCount, 60000);
 (() => {
   const embedContent = document.getElementById('embedContent');
-  const songEl = document.getElementById('songInfo');
   const vinyl = `
     <img src="images/important/GPVinyl.png" 
       alt="Vinyl image" 
@@ -59,29 +57,19 @@ setInterval(fetchVisitorCount, 60000);
       }
       const data = await response.json();
   
-      if (data?.is_playing && data.item?.name && data.item.artists?.length) {
-        const track = data.item.name;
-        const artists = data.item.artists.map(a => a.name).join(', ');
-        songEl.innerHTML = `🎵 ${track} 🎵<br>by ${artists}`;
-  
-        if (data.item.id !== currentTrackId) {
-          currentTrackId = data.item.id;
-          embedContent.innerHTML = `
-            <iframe src="https://open.spotify.com/embed/track/${currentTrackId}?theme=0"
-                    width="600" height="160" frameborder="0"
-                    allowtransparency="true" allow="encrypted-media"></iframe>`;
-        }
+      if (data?.is_playing && data.item?.name && data.item.artists?.length && data.item.id !== currentTrackId) {
+        currentTrackId = data.item.id;
+        embedContent.innerHTML = `
+          <iframe src="https://open.spotify.com/embed/track/${currentTrackId}?theme=0"
+                  width="600" height="160" frameborder="0"
+                  allowtransparency="true" allow="encrypted-media"></iframe>`;
       } else {
         currentTrackId = null;
-        songEl.textContent = '';
-        // Only update embedContent if it’s not already showing vinyl
         if (!embedContent.innerHTML.includes('GPVinyl.png')) {
           embedContent.innerHTML = vinyl;
         }
       }
     } catch (err) {
-      songEl.textContent = 'Error retrieving data.';
-      // Show vinyl on error as well
       if (!embedContent.innerHTML.includes('GPVinyl.png')) {
         embedContent.innerHTML = vinyl;
       }
