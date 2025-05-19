@@ -54,7 +54,7 @@ body {
   margin-top: 50px;
 }
 
-.embed-info {
+.embed-content {
   width: 600px;
   height: 160px;
   display: flex;
@@ -82,4 +82,12 @@ body {
   text-align: center;
 
   visibility: hidden;
+}
+
+.toppenguin {
+  width: calc(100% - 2rem); /* Leaves some space on small screens */
+  max-width: 50rem;
+  height: auto;
+  display: block;
+  margin: 1rem auto; /* spacing + centering */
 }
