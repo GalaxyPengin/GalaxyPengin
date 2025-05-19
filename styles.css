@@ -20,6 +20,12 @@ body {
   color: #c269ff;
 }
 
+.banner-size {
+  height: 60px;
+  display: block;
+  width: 150px;
+}
+
 .site-name {
   color: #a047dd;
 }
