@@ -38,6 +38,7 @@ async function fetchVisitorCount() {
   }
 }
 fetchVisitorCount();
+setInterval(fetchVisitorCount, 10000);
 (() => {
   const embedContent = document.getElementById('embedContent');
   const songEl = document.getElementById('songInfo');
