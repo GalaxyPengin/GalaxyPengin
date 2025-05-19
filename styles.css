@@ -37,16 +37,6 @@ body {
   font-family: 'Joystix', monospace, sans-serif;
 }
 
-.alt-embed-txt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48px;
-  font-weight: bold;
-  color: #8d8d8d;
-  text-align: center;
-}
-
 .embed-container {
   width: 630px;
   height: 190px;
