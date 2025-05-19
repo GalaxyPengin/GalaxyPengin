@@ -73,7 +73,7 @@ html, body {
 .embed-container {
   width: 90%;
   max-width: 620px;
-  height: auto;
+  height: 240px;
   padding: 20px;
   background: #1f1f1f;
   border-radius: 60px;
