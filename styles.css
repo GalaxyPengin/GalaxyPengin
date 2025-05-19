@@ -85,9 +85,16 @@ body {
 }
 
 .toppenguin {
-  width: calc(100% - 4rem); /* Leaves some space on small screens */
+  width: calc(100% - 4rem);
   max-width: 50rem;
   height: auto;
   display: block;
-  margin: 1rem auto; /* spacing + centering */
+  margin: 1rem auto;
+  animation: rotate 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
