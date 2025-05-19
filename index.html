@@ -19,8 +19,22 @@
   <div class="embed-content" id="embedContent">Loading Embed...</div>
 </div>
 <div class="song-info" id="songInfo">Loading...</div>
+<div class="meow">
+  Unique home dawgs so far: <span id="visitor-count">…</span>
+</div>
 
 <script>
+async function fetchVisitorCount() {
+  try {
+    const response = await fetch('https://gpwebflask.onrender.com/api/visitors');
+    if (!response.ok) throw new Error('Network response was not ok');
+    const data = await response.json();
+    document.getElementById('visitor-count').textContent = data.count;
+  } catch (err) {
+    document.getElementById('visitor-count').textContent = 'Error loading count';
+    console.error(err);
+  }
+}
 (() => {
   const embedContent = document.getElementById('embedContent');
   const songEl = document.getElementById('songInfo');
