@@ -67,7 +67,7 @@ setInterval(fetchVisitorCount, 60000);
           currentTrackId = data.item.id;
           embedContent.innerHTML = `
             <iframe src="https://open.spotify.com/embed/track/${currentTrackId}?theme=0"
-                    width="600" height="160" frameborder="0"
+                    width="100%" height="160" frameborder="0"
                     allowtransparency="true" allow="encrypted-media"></iframe>`;
         }
       } else {
