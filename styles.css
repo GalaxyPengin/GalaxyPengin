@@ -123,3 +123,12 @@ html, body {
     font-size: 18px;
   }
 }
+
+/* bye bye scroll bar chrome opera edge safari type shit*/
+body::-webkit-scrollbar {
+  display: none;
+}
+/* firefox ig cuz he just HAS to be different */
+body {
+  scrollbar-width: none;
+}
