@@ -49,7 +49,6 @@ async function fetchVisitorCount() {
         throw new Error(`HTTP ${response.status} - ${errorText}`);
       }
       const data = await response.json();
-      console.log(data);
 
       if (data?.is_playing && data.item?.name && data.item.artists?.length) {
         const track = data.item.name;
