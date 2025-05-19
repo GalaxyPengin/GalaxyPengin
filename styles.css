@@ -33,6 +33,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   margin-top: 5px;
+  margin-bottom: 10px;
   color: #fff;
   font-family: 'Joystix', monospace, sans-serif;
 }
@@ -85,7 +86,7 @@ body {
 }
 
 .toppenguin {
-  width: calc(100% - 4rem);
+  width: 4rem;
   max-width: 50rem;
   height: auto;
   display: block;
