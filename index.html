@@ -41,6 +41,11 @@ fetchVisitorCount();
 (() => {
   const embedContent = document.getElementById('embedContent');
   const songEl = document.getElementById('songInfo');
+  const vinyl = `
+    <img src="images/important/GPVinyl.png" 
+      alt="Vinyl image" 
+      width="150" 
+      style="animation: rotate 4s linear infinite; display: inline-block;">`;
 
   let currentTrackId = null;
 
@@ -67,13 +72,10 @@ fetchVisitorCount();
         }
       } else {
         currentTrackId = null;
-        embedContent.innerHTML = `
-          <img src="images/important/GPVinyl.png" 
-               alt="Vinyl image" 
-               width="150" 
-               style="animation: rotate 4s linear infinite; display: inline-block;">`;
         songEl.textContent = '';
-      }
+        if (embedContent.innerHTML !== vinyl) {
+          embedContent.innerHTML = vinyl;
+        }
     } catch (err) {
       songEl.textContent = 'Error retrieving data.';
       embedContent.textContent = 'Error retrieving data.';
