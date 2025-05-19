@@ -25,8 +25,8 @@ body {
 }
 
 .gray-text {
-  color: #ebebeb;
-  font-size: rem;
+  color: #AAA;
+  font-size: 0.5rem;
   font-weight: bold;
   text-align: center;
   font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
