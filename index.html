@@ -30,37 +30,9 @@
 
   let currentTrackId = null;
 
-  // Check URL fragment for refresh_token after redirect from /callback
-  function getRefreshTokenFromUrl() {
-    const hash = window.location.hash.substring(1);
-    const params = new URLSearchParams(hash);
-    const token = params.get('refresh_token');
-    if (token) {
-      // Store securely in localStorage
-      localStorage.setItem('spotify_refresh_token', token);
-      // Clear the token from URL so it doesn't linger
-      history.replaceState(null, '', window.location.pathname);
-    }
-  }
-
-  getRefreshTokenFromUrl();
-
   async function fetchNowPlaying() {
-    const refreshToken = localStorage.getItem('spotify_refresh_token');
-    if (!refreshToken) {
-      songEl.textContent = 'Not logged in. Please <a href="https://gpwebcodeserver.onrender.com/login">log in with Spotify</a>.';
-      embedContent.textContent = '';
-      return;
-    }
-
     try {
-      const response = await fetch('https://gpwebcodeserver.onrender.com/now-playing', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${refreshToken}`
-        }
-      });
+      const response = await fetch('https://gpwebcodeserver.onrender.com/now-playing');
       if (!response.ok) {
         const errorText = await response.text();
         throw new Error(`HTTP ${response.status} - ${errorText}`);
