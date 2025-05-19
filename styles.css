@@ -129,6 +129,7 @@ html, body {
   .embed-container {
     width: 85%;
     padding: 15px;
+    height: 180px;
   }
 }
 
