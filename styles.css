@@ -53,6 +53,8 @@ body {
   margin-bottom: 10px;
   color: #fff;
   font-family: 'Joystix', monospace, sans-serif;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .embed-container {
