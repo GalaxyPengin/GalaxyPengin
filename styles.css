@@ -91,8 +91,6 @@ body {
   height: auto;
   display: block;
   margin: 1rem auto;
-  animation: rotate 0.01s linear infinite;
-  display: inline-block;
 }
 
 @keyframes rotate {
