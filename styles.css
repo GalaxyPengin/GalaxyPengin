@@ -21,9 +21,18 @@ body {
 }
 
 .banner-size {
-  height: 60px;
-  display: block;
-  width: 150px;
+  position: fixed; /* Stay at the top */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% of viewport width */
+  height: 60px; /* adjust as needed */
+  background-color: #4d00bb; /* your dark purple */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* ensure it stays above everything */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .site-name {
