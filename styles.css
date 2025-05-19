@@ -24,6 +24,14 @@ body {
   font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
 }
 
+.gray-text {
+  color: #ebebeb;
+  font-size: rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
+}
+
 .highlight {
   color: gold;
   margin-top: 50px;
