@@ -98,11 +98,18 @@ html, body {
   margin: 1rem auto;
 }
 
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .socials a {
   display: inline-block;
   width: 80px;
   height: 80px;
-  gap: 20px;
   clip-path: circle(50%);
   overflow: hidden;
   border-radius: 50%;
