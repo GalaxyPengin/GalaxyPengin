@@ -104,6 +104,7 @@ html, body {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  background-color: black;
 }
 
 .socials a {
