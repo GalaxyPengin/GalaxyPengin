@@ -115,6 +115,11 @@ html, body {
 
 .vinyl-spin { /* this is for mobile spin*/
   animation: rotate 4s linear infinite;
+  width: 150px;
+  height: 150px;
+  margin-top: 9x;
+  animation: rotate 4s linear infinite;
+  display: inline-block;
 }
 
 @keyframes rotate {
