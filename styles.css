@@ -20,19 +20,6 @@ html, body {
   padding: 0;
 }
 
-.banner-size {
-  width: 100vw;
-  aspect-ratio: 3 / 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-color: #303030;
-  box-sizing: border-box;
-}
-
 .site-name {
   color: #a047dd;
 }
