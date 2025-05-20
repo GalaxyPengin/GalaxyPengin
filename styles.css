@@ -136,10 +136,10 @@ html, body {
     padding: 5px;
     border: 6px solid black;
     margin: 20px auto 0 auto;
-    height: fit-content;
+    height: auto;
   }
   .embed-content {
-    height: 120px;
+    height: 100px;
   }
 }
 
