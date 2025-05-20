@@ -51,6 +51,7 @@ html, body {
   font-family: 'Joystix', monospace, sans-serif;
   white-space: nowrap;
   text-align: center;
+  text-decoration: underline;
 }
 
 .currently-listening-to-box {
@@ -112,7 +113,7 @@ html, body {
 
 @media (max-width: 800px) {
   .currently-listening-to-txt {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
