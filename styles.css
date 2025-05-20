@@ -104,6 +104,7 @@ html, body {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .socials a {
@@ -123,8 +124,19 @@ html, body {
   cursor: pointer;
 }
 
-.socials img:hover {
+.socials a:hover img {
   transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+  .socials {
+    gap: 12px;
+  }
+
+  .socials a {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .vinyl-spin { /* now spins using class instead -- for mobile resize capability*/
