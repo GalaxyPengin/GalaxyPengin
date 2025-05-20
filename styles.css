@@ -115,8 +115,8 @@ html, body {
 
 .vinyl-spin { /* this is for mobile spin*/
   animation: rotate 4s linear infinite;
-  width: 150px;
-  height: 150px;
+  width: 165px;
+  height: 165px;
   margin-top: 9x;
   animation: rotate 4s linear infinite;
   display: inline-block;
@@ -154,8 +154,8 @@ html, body {
 
 @media (max-width: 500px) {
   .vinyl-spin {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
   }
 }
 
