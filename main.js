@@ -17,7 +17,7 @@ setInterval(fetchVisitorCount, 60000);
   const vinyl = `
     <img src="images/important/GPVinyl.png" 
       alt="Vinyl image" 
-      class="vinyl-spin";
+      class="vinyl-spin">`;
 
   let currentTrackId = null;
 
