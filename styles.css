@@ -90,12 +90,28 @@ html, body {
   border: 0;
 }
 
+@keyframes wobble {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+}
+
 .toppenguin {
   width: 16rem;
   max-width: 50rem;
   height: auto;
   display: block;
   margin: 1rem auto;
+  animation: wobble 1s ease-in-out infinite;
 }
 
 .socials {
