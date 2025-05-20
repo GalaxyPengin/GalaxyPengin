@@ -98,6 +98,25 @@ html, body {
   margin: 1rem auto;
 }
 
+.socials {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.socials img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.socials img:hover {
+  transform: scale(1.15);
+}
+
 .vinyl-spin { /* now spins using class instead -- for mobile resize capability*/
   animation: rotate 4s linear infinite;
   width: 165px;
