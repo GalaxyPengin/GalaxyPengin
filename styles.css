@@ -96,7 +96,7 @@ html, body {
   margin: 1rem auto;
 }
 
-.vinyl-spin { /* this is for mobile spin*/
+.vinyl-spin { /* now spins using class instead -- for mobile resize capability*/
   animation: rotate 4s linear infinite;
   width: 165px;
   height: 165px;
