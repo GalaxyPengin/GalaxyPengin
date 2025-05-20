@@ -108,7 +108,7 @@ html, body {
 
 .socials img {
   width: 40px;
-  height: auto;
+  height: 40px;
   transition: transform 0.2s ease;
   cursor: pointer;
 }
