@@ -98,20 +98,19 @@ html, body {
   margin: 1rem auto;
 }
 
-.socials {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.socials img {
+.socials a {
+  display: inline-block;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
+  clip-path: circle(50%);
   overflow: hidden;
+  border-radius: 50%;
+}
+
+.socials a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.2s ease;
   cursor: pointer;
 }
