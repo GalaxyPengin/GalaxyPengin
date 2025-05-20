@@ -52,6 +52,7 @@ html, body {
   white-space: nowrap;
   text-align: center;
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .currently-listening-to-box {
