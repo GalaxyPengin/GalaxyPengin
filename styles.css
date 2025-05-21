@@ -48,7 +48,7 @@ html, body {
   margin-top: 5px;
   margin-bottom: 10px;
   color: #fff;
-  font-family: 'Joystix', monospace, sans-serif;
+  font-family: Consolas, "Liberation Mono", Menlo, monospace;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
