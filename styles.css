@@ -4,6 +4,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  
 }
 
 html, body {
@@ -43,12 +44,12 @@ html, body {
 }
 
 .currently-listening-to-txt {
-  font-size: clamp(12px, 2.5vw, 24px);
+  font-size: clamp(12px, 2.5vw, 26px);
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 10px;
   color: #fff;
-  font-family: Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: 'Joystix', monospace, sans-serif;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -56,6 +57,7 @@ html, body {
   border-bottom: 2px solid #fff;
   padding-bottom: 5px; /* space for border */
   max-width: 100%;
+  letter-spacing: 0.2em;
 }
 
 .currently-listening-to-box {
