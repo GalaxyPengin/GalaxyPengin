@@ -44,7 +44,7 @@ html, body {
 }
 
 .currently-listening-to-txt {
-  font-size: clamp(12px, 2.5vw, 26px);
+  font-size: clamp(12px, 2.5vw, 24px);
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 10px;
