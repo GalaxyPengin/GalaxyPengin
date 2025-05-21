@@ -43,6 +43,7 @@ html, body {
 }
 
 .currently-listening-to-txt {
+  font-size: clamp(14px, 3.2vw, 24px);
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -52,7 +53,6 @@ html, body {
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 5px;
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 
 .currently-listening-to-box {
