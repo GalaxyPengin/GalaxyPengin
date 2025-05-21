@@ -119,7 +119,7 @@ html, body {
 
 .socials {
   display: flex;
-  gap: 40px;
+  gap: 70px;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
