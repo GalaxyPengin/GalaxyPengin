@@ -154,7 +154,7 @@ html, body {
 
 @media (max-width: 600px) {
   .socials {
-    gap: 12px;
+    gap: 16px;
   }
 
   .socials a {
