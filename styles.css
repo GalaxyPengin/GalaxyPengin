@@ -57,7 +57,7 @@ html, body {
   border-bottom: 2px solid #fff;
   padding-bottom: 5px; /* space for border */
   max-width: 100%;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
 }
 
 .currently-listening-to-box {
