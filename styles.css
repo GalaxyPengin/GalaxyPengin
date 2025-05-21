@@ -140,7 +140,6 @@ html, body {
   transition: transform 0.2s ease;
   cursor: pointer;
   display: block;
-  transform: scale(0.9);
 }
 
 .socials a:hover img {
