@@ -53,5 +53,5 @@ setInterval(fetchVisitorCount, 60000);
   }
 
   fetchNowPlaying();
-  setInterval(fetchNowPlaying, 3000);
+  setInterval(fetchNowPlaying, 1000);
 })();
