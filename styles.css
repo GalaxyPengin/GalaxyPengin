@@ -127,9 +127,10 @@ html, body {
   display: inline-block;
   width: 80px;
   height: 80px;
-  clip-path: circle(50%);
-  overflow: hidden;
   border-radius: 50%;
+  overflow: hidden;
+  clip-path: circle(50%);
+  position: relative;
 }
 
 .socials a img {
@@ -138,10 +139,11 @@ html, body {
   object-fit: cover;
   transition: transform 0.2s ease;
   cursor: pointer;
+  display: block;
 }
 
 .socials a:hover img {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 @media (max-width: 600px) {
