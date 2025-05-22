@@ -41,24 +41,21 @@ html, body {
 .unimp-text-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers children horizontally */
-  max-width: 600px;    /* adjust width as needed */
-  margin: 0 auto;      /* center wrapper on page */
+  align-items: center; /* centers container */
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff; /* fix black text */
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* example */
 }
 
-.top-line {
-  align-self: flex-start; /* aligns this line left inside the wrapper */
-  font-weight: 800;       /* extra bold for Galaxy */
-}
-
+.top-line,
 .bottom-line {
-  text-align: center;     /* bottom line centered inside wrapper */
-  font-weight: 800;       /* extra bold for Pengin */
-  width: 100%;            /* fills the wrapper width */
+  width: 100%;
+  text-align: left;  /* left align both */
 }
 
 .extra-bold {
-  font-weight: 900px;
+  font-weight: 900;
 }
 
 .align-left {
