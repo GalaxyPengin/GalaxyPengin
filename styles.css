@@ -40,11 +40,12 @@ html, body {
 
 .occupation {
   letter-spacing: 0.1em;
-  font-size: 30px;
+  font-size: 20px;
   color: #fff;
   font-weight: bold;
   text-align: center;
   font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
+  padding: 10px;
 }
 
 @media (max-width: 600px) {
