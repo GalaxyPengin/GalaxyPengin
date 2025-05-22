@@ -44,8 +44,11 @@ html, body {
   align-items: center; /* centers container */
   max-width: 600px;
   margin: 0 auto;
-  color: #fff; /* fix black text */
   font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* example */
+  color: #AAA;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .top-line,
