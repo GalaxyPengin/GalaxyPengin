@@ -78,16 +78,6 @@ html, body {
   }
 }
 
-.mobile-break {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  .mobile-break {
-    display: inline;
-  }
-}
-
 .extra-bold {
   font-weight: 850;
 }
