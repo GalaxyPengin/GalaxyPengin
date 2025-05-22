@@ -8,9 +8,9 @@
 }
 
 html, body {
-  display: flex;
+  display: block;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   background: #160a32;
