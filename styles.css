@@ -59,7 +59,10 @@ html, body {
 
 @media (max-width: 600px) {
   .unimp-text-wrapper {
-    font-size: 14px; /* or smaller if needed */
+    font-size: 14px;         /* Slightly smaller text */
+    padding: 0 20px;         /* Adds space left & right */
+    max-width: 100%;         /* Prevents overflow */
+    box-sizing: border-box;  /* Ensures padding doesn’t break layout */
   }
 
   .extra-bold {
@@ -68,7 +71,10 @@ html, body {
 
   .top-line,
   .bottom-line {
-    padding: 2px 0; /* tighten spacing if needed */
+    padding: 4px 0;          /* Keeps vertical spacing clean */
+    text-align: left;        /* Optional: keeps alignment tidy */
+  }
+}
   }
 }
 
