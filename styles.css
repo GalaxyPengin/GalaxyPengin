@@ -40,8 +40,11 @@ html, body {
 
 .occupation {
   letter-spacing: 0.14em;
+  color: #fff;
+  font-size: 2rem;
   font-weight: bold;
-  font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
 }
 
 .highlight {
