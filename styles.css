@@ -46,8 +46,8 @@ html, body {
   text-align: center;
   font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
   width: 480px;
-  white-space: nowrap;
   margin: 0 auto;
+  white-space: nowrap;
 }
 
 @media (max-width: 600px) {
