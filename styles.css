@@ -38,10 +38,10 @@ html, body {
   font-style: italic;
 }
 
-.underline-text {
+.divider {
   display: block;
   max-width: 95vw;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #A9A9A9;
   padding-bottom: 5px;
   margin: 0 auto;
 }
