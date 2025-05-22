@@ -45,7 +45,12 @@ html, body {
   font-weight: bold;
   text-align: center;
   font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
-  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .occupation {
+    font-size: 14px;
+  }
 }
 
 .highlight {
