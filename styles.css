@@ -38,6 +38,25 @@ html, body {
   font-style: italic;
 }
 
+.unimp-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers children horizontally */
+  max-width: 600px;    /* adjust width as needed */
+  margin: 0 auto;      /* center wrapper on page */
+}
+
+.top-line {
+  align-self: flex-start; /* aligns this line left inside the wrapper */
+  font-weight: 800;       /* extra bold for Galaxy */
+}
+
+.bottom-line {
+  text-align: center;     /* bottom line centered inside wrapper */
+  font-weight: 800;       /* extra bold for Pengin */
+  width: 100%;            /* fills the wrapper width */
+}
+
 .extra-bold {
   font-weight: 900px;
 }
