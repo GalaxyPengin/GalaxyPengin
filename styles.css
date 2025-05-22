@@ -57,6 +57,21 @@ html, body {
   text-align: left;  /* left align both */
 }
 
+@media (max-width: 600px) {
+  .unimp-text-wrapper {
+    font-size: 14px; /* or smaller if needed */
+  }
+
+  .extra-bold {
+    font-weight: 700; /* can stay or reduce if too bold on small screens */
+  }
+
+  .top-line,
+  .bottom-line {
+    padding: 2px 0; /* tighten spacing if needed */
+  }
+}
+
 .extra-bold {
   font-weight: 850;
 }
