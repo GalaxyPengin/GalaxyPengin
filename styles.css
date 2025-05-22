@@ -48,6 +48,7 @@ html, body {
   width: 480px;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
