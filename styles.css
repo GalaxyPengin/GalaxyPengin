@@ -45,7 +45,8 @@ html, body {
   font-weight: bold;
   text-align: center;
   font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   margin: 0 auto;
   white-space: nowrap;
 }
