@@ -39,9 +39,11 @@ html, body {
 }
 
 .underline-text {
-  display: inline-block;
+  display: block;
+  max-width: 95vw;
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
+  margin: 0 auto;
 }
 
 .occupation {
