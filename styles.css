@@ -55,10 +55,13 @@ html, body {
 }
 
 .both-dividers {
-  display: inline-block;
+  display: block;
+  width: 80vw;
+  margin: 0 auto;
   border-top: 2px solid #A9A9A9;
   border-bottom: 2px solid #A9A9A9;
-  padding: 5px 0;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .occupation {
