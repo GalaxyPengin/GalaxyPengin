@@ -218,3 +218,63 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: none;
 }
+
+/* corusel */
+.carousel {
+  position: relative;
+  width: 90%;
+  max-width: 640px;
+  height: 360px; /* adjust depending on your media size */
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-slide video,
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-arrow.right {
+  right: 10px;
+}
+
+.carousel-arrow.left {
+  left: 10px;
+}
