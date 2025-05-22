@@ -50,12 +50,12 @@ html, body {
 @media (max-width: 600px) {
   .occupation {
     font-size: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;  /* so padding doesn’t add to width */
-    width: 100%;             /* fill available width minus padding */
-    max-width: none;         /* remove fixed width to avoid overflow */
-    white-space: normal;     /* allow wrapping on small screens */
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    white-space: normal;
   }
 }
 
