@@ -38,8 +38,13 @@ html, body {
   font-style: italic;
 }
 
+.underline-text {
+  display: inline-block
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
 .occupation {
-  display: inline-block;
   letter-spacing: 0.1em;
   font-size: 20px;
   color: #fff;
@@ -47,8 +52,6 @@ html, body {
   text-align: center;
   font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
   padding: 10px;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 5px;
 }
 
 @media (max-width: 600px) {
