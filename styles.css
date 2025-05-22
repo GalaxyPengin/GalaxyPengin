@@ -38,7 +38,15 @@ html, body {
   font-style: italic;
 }
 
-.divider {
+.top-divider {
+  display: block;
+  max-width: 80vw;
+  border-top: 2px solid #A9A9A9;
+  padding-top: 5px;
+  margin: 0 auto;
+}
+
+.bottom-divider {
   display: block;
   max-width: 80vw;
   border-bottom: 2px solid #A9A9A9;
