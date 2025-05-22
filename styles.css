@@ -39,7 +39,7 @@ html, body {
 }
 
 .underline-text {
-  display: inline-block
+  display: inline-block;
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
 }
