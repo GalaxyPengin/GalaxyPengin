@@ -43,10 +43,10 @@ html, body {
 }
 
 .align-left {
-  display: inline-block;
+  display: block;
   text-align: left;
-  width: max-content;
   min-width: 350px;
+  margin: 0 auto;
 }
 
 .top-divider {
