@@ -45,6 +45,7 @@ html, body {
   font-weight: bold;
   text-align: center;
   font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
+  text-decoration: underline;
 }
 
 .highlight {
@@ -233,7 +234,7 @@ body {
   position: relative;
   width: 90%;
   max-width: 640px;
-  height: 360px; /* adjust depending on your media size */
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 12px;
   margin: 40px auto;
