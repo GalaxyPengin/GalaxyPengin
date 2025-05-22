@@ -41,10 +41,10 @@ html, body {
 .unimp-text-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers container */
+  align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* example */
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
   color: #AAA;
   font-size: 1rem;
   font-weight: bold;
@@ -54,25 +54,25 @@ html, body {
 .top-line,
 .bottom-line {
   width: 100%;
-  text-align: left;  /* left align both */
+  text-align: left;
 }
 
 @media (max-width: 600px) {
   .unimp-text-wrapper {
-    font-size: 14px;         /* Slightly smaller text */
-    padding: 0 20px;         /* Adds space left & right */
-    max-width: 100%;         /* Prevents overflow */
-    box-sizing: border-box;  /* Ensures padding doesn’t break layout */
+    font-size: 14px;
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .extra-bold {
-    font-weight: 700; /* can stay or reduce if too bold on small screens */
+    font-weight: 700;
   }
 
   .top-line,
   .bottom-line {
-    padding: 4px 0;          /* Keeps vertical spacing clean */
-    text-align: left;        /* Optional: keeps alignment tidy */
+    padding: 4px 0;
+    text-align: left;
   }
 }
   }
@@ -128,8 +128,8 @@ html, body {
 @media (max-width: 600px) {
   .occupation {
     font-size: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
     box-sizing: border-box;
     width: 100%;
     max-width: none;
