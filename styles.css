@@ -38,6 +38,17 @@ html, body {
   font-style: italic;
 }
 
+.extra-bold {
+  font-weight: 900px;
+}
+
+.align-left {
+  display: inline-block;
+  text-align: left;
+  width: max-content;
+  min-width: 350px;
+}
+
 .top-divider {
   display: block;
   max-width: 80vw;
