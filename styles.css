@@ -39,16 +39,12 @@ html, body {
 }
 
 .occupation {
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   font-family: 'Arial Rounded MT Bold', 'Arial Rounded MT', Arial, sans-serif;
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  white-space: nowrap;
 }
 
 @media (max-width: 600px) {
