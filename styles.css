@@ -253,18 +253,24 @@ body {
 }
 
 .carousel-arrow {
+  width: clamp(30px, 4vw, 50px);
+  height: clamp(30px, 4vw, 50px);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   border: none;
-  padding: 10px 14px;
   cursor: pointer;
   z-index: 2;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border-radius: 50%;
   transition: background 0.2s ease;
+  font-weight: 900;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-arrow:hover {
