@@ -4,21 +4,135 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  
+}
+
+@font-face {
+  font-family: 'Monocraft';
+  src: url('fonts/Monocraft-nerd-fonts-patched.ttc') format('truetype');
 }
 
 html, body {
+  --background-color: #160b21;
   display: block;
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background: #160b21;
+  background: var(--background-color);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+	--background-color: #160b21;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background-color);
+  color: white;
+}
+
+.banner {
+	--banner-height: 12vw;
+  position: relative;
+  height: var(--banner-height);
+  background-image: url('images/GalaxyBanner.png');
+  background-size: cover;
+  background-position: center calc(50% + 2vw);
+  background-repeat: no-repeat;
+}
+
+.header {
+	position: relative;
+	overflow: visible;
+	width: 100%;
+}
+
+.header-content {
+  position: absolute;
+  top: var(--banner-height);
+  left: clamp(1rem, 20vw - 5rem, 15vw);
+  transform: translateY(-33%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.header-icon {
+	--icon-size: 14vw;
+	position: relative;
+	z-index: 1;
+  width: var(--icon-size);
+  height: var(--icon-size);
+	transform: translateY(-30%);
+  border-radius: 50%;
+  border: 2px solid #1a032e;
+  flex-shrink: 0;
+  pointer-events: auto;
+	user-select: none;
+}
+
+.header-icon-groin {
+	position: absolute;
+	z-index: 2;
+	width: 16px;
+	height: 12px;
+	transform: translate(134px, 155px)
+}
+
+.speaker-icon {
+	--speaker-size: 3vw;
+  width: var(--speaker-size);
+  height: var(--speaker-size);
+	transform: translateX(-410%) translateY(85%);
+	background: var(--background-color);
+	border: 6px solid var(--background-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+  pointer-events: auto;
+	user-select: none;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+}
+
+.speaker-icon:hover {
+	transform: translateX(-410%) translateY(85%) scale(1.05);
+}
+
+.header-name {
+  --outline-size: 5px;
+  font-family: 'Monocraft', monospace;
+  font-size: clamp(1rem, 3.6vw, 5vw);
+  color: #4d00bb;
+  margin-bottom: -0.5vw;
+  text-shadow:
+    calc(var(--outline-size) * -1) calc(var(--outline-size) * -1) 0 black,
+    calc(var(--outline-size))      calc(var(--outline-size) * -1) 0 black,
+    calc(var(--outline-size) * -1) calc(var(--outline-size))      0 black,
+    calc(var(--outline-size))      calc(var(--outline-size))      0 black;
+  height: auto;
+  flex-shrink: 0;
+  fill: #4d00bb;
+  stroke: black;
+  stroke-width: 10;
+  paint-order: stroke fill;
+}
+
+.header-subtitle {
+	font-style: italic;
+  font-size: clamp(0.25rem, 1.2vw, 1.2vw);
+	line-height: 1.2;
+  color: #d4d4d4;
 }
 
 .imp-text {
