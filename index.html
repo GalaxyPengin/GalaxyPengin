@@ -9,7 +9,10 @@
 <link rel="apple-touch-icon" href="images/important/CirclePFP.png">
 <link rel="icon" sizes="192x192" href="images/important/CirclePFP.png">
 <link rel="stylesheet" href="styles.css" />
-<script src="main.js" defer></script>
+<script src="js/spotify-embed.js" defer></script>
+<script src="js/carousel.js" defer></script>
+<script src="js/speaker-icon.js" defer></script>
+<script src="js/visitor-count.js" defer></script>
 <!-- Embed Properties -->
 <meta property="og:title" content="GalaxyPengin | Official Website" />
 <meta property="og:description" content="Learn more about me, my favorite artists, what I'm playing, what I'm listening to, and more." />
@@ -22,13 +25,45 @@
 <meta property="og:site_name" content="GalaxyPengin" />
 </head>
 <body>
+
 <!-------------------------------------------------  M  A  I  N        B  O  D  Y  -------------------------------------------------> 
+<audio id="GalaxyPenginPronounce">
+  <source src="audio/galaxypengin.ogg" type="audio/ogg" />
+  Your browser does not support the audio element.
+</audio>
+
+<header class="header">
+  <div class="banner"></div>
+  <div class="header-content">
+    <img 
+        src="images/CirclePFP.png"
+        alt="Header Icon"
+        class="header-icon"
+      />
+    <div class="header-icon-groin" title="Woah"></div>
+    <div class="header-main">
+      <h1 class="header-name">GalaxyPengin</h1>
+      <h2 class="header-subtitle">
+        <u>“Galaxy”</u> coming from my love for space<br>
+        <u>”Pengin”</u> coming from the Japanese word for penguin (my favorite animal)
+      </h2>
+    </div>
+    <img
+        src="images/SpeakerIcon.png"
+        alt="Speaker Icon"
+        class="speaker-icon"
+        title="Pronunciation"
+      />
+  </div>
+</header>
+
 <!-- Admin Meta Info --> 
 <div class="unimp-text">
   <br>
   Unique visitors: <span id="visitor-count">…</span>
 </div>
-<div class="unimp-text">Last Edited: 5/27/2025, 18:47</div>
+<div class="unimp-text">Last Edited: 5/27/2025, 11:14PM</div>
+
 <!-- Welcome/Beginner Elements -->
 <div class="imp-text">
   <div>
@@ -39,8 +74,10 @@
   <div><i>Check back soon!</i></div>
 </div>
 <img src="images/important/randompenguin.png" class="toppenguin" />
+
 <!-- Occupational Title -->
 <div class="occupation"><span class="both-dividers">Junior Graphic Designer • Print Production Artist • Website & Social Media Manager</span></div>
+
 <!-- Social Media Hyperlinks -->
 <div class="socials">
   <a href="https://www.tiktok.com/@galaxypengin" target="_blank" rel="noopener">
@@ -59,11 +96,13 @@
     <img src="images/socials/youtubelogo2.png" alt="YouTube">
   </a>
 </div>
+
 <!-- 'Current' Embeds-->
 <div class="currently-listening-to-box">
   <div class="currently-listening-to-txt">Currently Listening To:</div>
   <div class="currently-listening-to-content" id="embedContent">Loading Embed...</div>
 </div>
+
 <!-- Carousel -->
 <div class="carousel">
   <div class="carousel-track" id="carousel-track">
