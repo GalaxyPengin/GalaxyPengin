@@ -30,7 +30,7 @@ html, body {
 	--banner-height: 12vw;
   position: relative;
   height: var(--banner-height);
-  background-image: url('images/GalaxyBanner.png');
+  background-image: url('images/important/GalaxyBanner.png');
   background-size: cover;
   background-position: center calc(50% + 2vw);
   background-repeat: no-repeat;
